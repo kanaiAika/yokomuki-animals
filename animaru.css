@@ -1,0 +1,778 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.usagi_m {
+  top:800px;
+  left:100px;
+  overflow: hidden; /* スクロールバーが出ないように */
+  position: relative; /* マーキーの内容部分の位置の基準になるように */
+  width:400px;
+  height:300px;
+padding:0.5em 0;
+margin-bottom:10px;
+}
+
+.marquee::after {
+  content: "";
+  white-space: 300px;
+  display: inline-block;
+}
+
+.usagi_m > .usagi a{
+  position: absolute;
+  height:184px;
+  weight:184px;
+  background-image:url("usagi.png");
+  top: 0;
+  white-space: nowrap;
+  animation-name: marquee;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+  animation-direction:alternate;
+  animation-iteration-count: infinite;
+}
+
+.usagi_m > .usagi a:hover {
+	width: 300px;
+	height: 300px;
+    background-image:url("うさぎ.gif");
+  animation-play-state: paused;
+  cursor: default;
+}
+
+@keyframes marquee {
+    0% { left: 70%; transform: translate(0); }
+  100% { left: 30%; transform: translate(-100%); }
+}
+
+.usagi a{
+	display:block;
+	position:absolute;
+	top:850px;
+	left:100px;
+    width: 185px;
+	height: 184px;
+    background-image:url("usagi.png");
+}
+/*未訪問のリンク*/
+.button01 a:link{
+}
+/*訪問済みのリンク*/
+.button01 a:visited{
+}
+/*マウスホバー時*/
+
+/*選択中*/
+.button01 a:active{
+}
+
+/** マーキーさせたい部分 */
+.rion_m {
+	top:900px;
+	left:200px;
+  overflow: hidden; /* スクロールバーが出ないように */
+  position: relative; /* マーキーの内容部分の位置の基準になるように */
+  width:600px;
+  height:300px;
+padding:0.5em 0;
+margin-bottom:10px;
+}
+ /* マーキーの内容部分の高さ確保 */
+.marquee::after {
+  content: "";
+  white-space: 300px;
+  display: inline-block;
+}
+/* マーキーさせたい部分(内側) */
+.rion_m > .rion a{
+  position: absolute;
+  height:184px;
+  weight:184px;
+  background-image:url(rion.png);
+  top: 0;
+  white-space: nowrap;
+  animation-name: marquee;
+  animation-timing-function: linear;
+  animation-duration: 20s;
+  animation-direction:alternate;
+  animation-iteration-count: infinite;
+}
+/* マウスオーバーでマーキーストップ */
+.rion_m > .rion a:hover {
+	width: 300px;
+	height: 300px;
+    background-image:url("ライオン.gif");
+  animation-play-state: paused;
+  cursor: default;
+}
+/** マーキーアニメーション */
+@keyframes marquee {
+    0% { left: 70%; transform: translate(0); }
+  100% { left: 30%; transform: translate(-100%); }
+}
+
+.rion a{
+	display:block;
+	position:absolute;
+	top:1000px;
+	left:300px;
+    width: 185px;
+	height: 184px;
+    background-image:url("rion.png");  
+}
+
+
+.risu_m {
+	display:block;
+	top:450px;
+	left:600px;
+  overflow: hidden; /* スクロールバーが出ないように */
+  position: relative; /* マーキーの内容部分の位置の基準になるように */
+  width:600px;
+  height:300px;
+padding:0.5em 0;
+margin-bottom:10px;
+}
+
+.risu_m::after {
+  content: "";
+  white-space: 300px;
+  display: inline-block;
+}
+
+.risu_m > .risu a{
+	display:block;
+  position: absolute;
+  height:184px;
+  weight:184px;
+  background-image:url("risu.png");
+  top: 0;
+  white-space: nowrap;
+  animation-name: marquee;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-direction:alternate;
+  animation-iteration-count: infinite;
+}
+
+.risu_m > .risu a:hover {
+	width: 300px;
+	height: 300px;
+    background-image:url("リス.gif");
+  animation-play-state: paused;
+  cursor: default;
+}
+
+@keyframes marquee {
+    0% { left: 60%; transform: translate(0); }
+  100% { left: 40%; transform: translate(-100%); }
+}
+
+.risu a{
+	display:block;
+	position:absolute;
+	top:900px;
+	left:500px;
+    width: 185px;
+	height: 184px;
+    background-image:url("risu.png");
+	
+}
+
+
+
+.neko_m {
+	top:250px;
+	left:900px;
+  overflow: hidden; /* スクロールバーが出ないように */
+  position: relative; /* マーキーの内容部分の位置の基準になるように */
+  width:1500px;
+  height:300px;
+padding:0.5em 0;
+margin-bottom:10px;
+}
+
+.neko_m::after {
+  content: "";
+  white-space: 300px;
+  display: inline-block;
+}
+
+.neko_m > .neko a{
+  position: absolute;
+  height:184px;
+  weight:184px;
+  background-image:url("neko.png");
+  top: 0;
+  white-space: nowrap;
+  animation-name: marquee;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-direction:alternate;
+  animation-iteration-count: infinite;
+}
+
+.neko_m > .neko a:hover {
+	width: 300px;
+	height: 300px;
+    background-image:url("ねこ.gif");
+  animation-play-state: paused;
+  cursor: default;
+}
+
+@keyframes marquee {
+    0% { left: 70%; transform: translate(0); }
+  100% { left: 30%; transform: translate(-100%); }
+}
+
+.neko a{
+	display:block;
+	position:absolute;
+	top:850px;
+	left:900px;
+   width: 185px;
+	height: 184px;
+    background-image:url("neko.png");
+	
+}
+
+
+
+
+
+.kuma_m {
+	top:150px;
+	left:700px;
+  overflow: hidden; /* スクロールバーが出ないように */
+  position: relative; /* マーキーの内容部分の位置の基準になるように */
+  width:700px;
+  height:300px;
+padding:0.5em 0;
+margin-bottom:10px;
+}
+
+.kuma_m::after {
+  content: "";
+  white-space: 300px;
+  display: inline-block;
+}
+
+.kuma_m > .kuma a{
+  position: absolute;
+  height:184px;
+  weight:184px;
+  background-image:url("kuma.png");
+  top: 0;
+  white-space: nowrap;
+  animation-name: marquee;
+  animation-timing-function: linear;
+  animation-duration: 20s;
+  animation-direction:alternate;
+  animation-iteration-count: infinite;
+}
+
+.kuma_m > .kuma a:hover {
+	width: 300px;
+	height: 300px;
+    background-image:url("くま.gif");
+  animation-play-state: paused;
+  cursor: default;
+}
+
+@keyframes marquee {
+    0% { left: 70%; transform: translate(0); }
+  100% { left: 30%; transform: translate(-100%); }
+}
+
+.kuma a{
+	display:block;
+	position:absolute;
+	top:800px;
+	left:1200px;
+    width: 185px;
+	height: 184px;
+    background-image:url("kuma.png");
+	
+  
+}
+
+
+.panda_m {
+	top:100px;
+	left:1000px;
+  overflow: hidden; /* スクロールバーが出ないように */
+  position: relative; /* マーキーの内容部分の位置の基準になるように */
+  width:600px;
+  height:300px;
+padding:0.5em 0;
+margin-bottom:10px;
+}
+
+.panda_m::after {
+  content: "";
+  white-space: 300px;
+  display: inline-block;
+}
+
+.panda_m > .panda a{
+  position: absolute;
+  height:184px;
+  weight:184px;
+  background-image:url("panda.png");
+  top: 0;
+  white-space: nowrap;
+  animation-name: marquee;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+  animation-direction:alternate;
+  animation-iteration-count: infinite;
+}
+
+.panda_m > .panda a:hover {
+	width: 300px;
+	height: 300px;
+    background-image:url("ぱんだ.gif");
+  animation-play-state: paused;
+  cursor: default;
+}
+
+@keyframes marquee {
+    0% { left: 70%; transform: translate(0); }
+  100% { left: 30%; transform: translate(-100%); }
+}
+
+.panda a{
+	display:block;
+	position:absolute;
+	top:900px;
+	left:1500px;
+    width: 185px;
+	height: 184px;
+    background-image:url("panda.png");
+	
+  
+}
+
+.buta_m {
+	top:200px;
+	left:1400px;
+  overflow: hidden; /* スクロールバーが出ないように */
+  position: relative; /* マーキーの内容部分の位置の基準になるように */
+  width:500px;
+  height:300px;
+padding:0.5em 0;
+margin-bottom:10px;
+}
+
+.buta_m::after {
+  content: "";
+  white-space: 300px;
+  display: inline-block;
+}
+
+.buta_m > .buta a{
+  position: absolute;
+  height:184px;
+  weight:184px;
+  background-image:url("buta.png");
+  top: 0;
+  white-space: nowrap;
+  animation-name: marquee;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+  animation-direction:alternate;
+  animation-iteration-count: infinite;
+}
+
+.buta_m > .buta a:hover {
+	width: 300px;
+	height: 300px;
+    background-image:url("ぶた.gif");
+  animation-play-state: paused;
+  cursor: default;
+}
+
+@keyframes marquee {
+    0% { left: 70%; transform: translate(0); }
+  100% { left: 30%; transform: translate(-100%); }
+}
+
+.buta a{
+	display:block;
+	position:absolute;
+	top:1000px;
+	left:1900px;
+    width: 185px;
+	height: 184px;
+    background-image:url("buta.png");
+	
+}
+
+.buta a:hover{
+	width: 300px;
+	height: 300px;
+    background-image:url("ぶた.gif");
+}
+
+
+.kirin_m {
+	top:200px;
+	left:1500px;
+  overflow: hidden; /* スクロールバーが出ないように */
+  position: relative; /* マーキーの内容部分の位置の基準になるように */
+  width:1500px;
+  height:300px;
+padding:0.5em 0;
+margin-bottom:10px;
+}
+
+.kirin_m::after {
+  content: "";
+  white-space: 300px;
+  display: inline-block;
+}
+
+.kirin_m > .kirin a{
+  position: absolute;
+  height:184px;
+  weight:184px;
+  background-image:url(kirin.png);
+  top: 0;
+  white-space: nowrap;
+  animation-name: marquee;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-direction:alternate;
+  animation-iteration-count: infinite;
+}
+
+.kirin_m > .kirin a:hover {
+	width: 300px;
+	height: 300px;
+    background-image:url("キリン.gif");
+  animation-play-state: paused;
+  cursor: default;
+}
+
+@keyframes marquee {
+    0% { left: 70%; transform: translate(0); }
+  100% { left: 30%; transform: translate(-100%); }
+}
+
+.kirin a{
+	display:block;
+	position:absolute;
+	top:900px;
+	left:2100px;
+    width: 185px;
+	height: 184px;
+    background-image:url("kirin.png");
+	
+  
+}
+
+.kirin a:hover{
+	width: 300px;
+	height: 300px;
+    background-image:url("キリン.gif");
+}
+
+/*文字のやつゾーン*/
+
+.yokomuki_f a{
+		position:absolute;
+		top:350px;
+		left:450px;
+		width: 755px;
+		height: 211px;
+		background-image:url("yokomuki_n.png");
+	
+}
+
+.hatena_f a{
+	position:absolute;
+	top:300px;
+	left:550px;
+    width: 461px;
+	height: 323px;
+    background-image:url("_.png");
+}
+
+
+.ikamaru_f a{
+		position:absolute;
+		top:350px;
+		left:450px;
+		width: 755px;
+		height: 211px;
+		background-image:url("ikamaru_n.png");
+	
+}
+
+.map_f a{
+		position:absolute;
+		top:350px;
+		left:450px;
+		width: 755px;
+		height: 211px;
+		background-image:url("map.png");
+	
+}
+
+
+.usagi_f a{
+	position:absolute;
+	top:300px;
+	left:550px;
+    width: 461px;
+	height: 323px;
+    background-image:url("usagi_n.png");
+}
+/*未訪問のリンク*/
+.button01 a:link{
+}
+/*訪問済みのリンク*/
+.usagi_f a:visited{
+	background-image:url("ネームプレート-03.png")
+}
+/*マウスホバー時*/
+.usagi_f a:hover{
+    ;
+}
+/*選択中*/
+.button01 a:active{
+}
+
+
+.rion_f a{
+	position:absolute;
+	top:300px;
+	left:550px;
+    width: 569px;
+	height: 323px;
+    background-image:url("rion_n.png");
+}
+.rion_f a:visited{
+	background-image:url("ネームプレート-05.png")
+}
+
+
+.risu_f a{
+	position:absolute;
+	top:300px;
+	left:550px;
+    width: 461px;
+	height: 323px;
+    background-image:url("risu_n.png");
+}
+.risu_f a:visited{
+	background-image:url("ネームプレート-07.png")
+}
+
+.neko_f a{
+	position:absolute;
+	top:300px;
+	left:550px;
+    width: 461px;
+	height: 323px;
+    background-image:url("neko_n.png");
+}
+.neko_f a:visited{
+	background-image:url("ネームプレート-09.png")
+}
+
+.kuma_f a{
+	position:absolute;
+	top:300px;
+	left:550px;
+    width: 461px;
+	height: 323px;
+    background-image:url("kuma_n.png");
+}
+.kuma_f a:visited{
+	background-image:url("ネームプレート-11.png")
+}
+
+.panda_f a{
+	position:absolute;
+	top:300px;
+	left:550px;
+    width: 461px;
+	height: 323px;
+    background-image:url("panda_n.png");
+}
+.panda_f a:visited{
+	background-image:url("ネームプレート-13.png")
+}
+
+.buta_f a{
+	position:absolute;
+	top:300px;
+	left:550px;
+    width: 461px;
+	height: 323px;
+    background-image:url("buta_n.png");
+}
+.buta_f a:visited{
+	background-image:url("ネームプレート-15.png")
+}
+
+.kirin_f a{
+	position:absolute;
+	top:300px;
+	left:550px;
+    width: 461px;
+	height: 323px;
+    background-image:url("kirin_n.png");
+}
+.kirin_f a:visited{
+	background-image:url("ネームプレート-17.png")
+}
+
+._f a{
+	position:fixed;
+}
+
+
+/*_s系*/
+
+.usagi_s a{
+	position:fixed;
+	top:-1px;
+	left:217px;
+	width:1183px;
+	height:898px;
+	background-image:url("usagi_s.gif");
+}
+.usagi_s a:hover{
+	width: 1183px;
+	height: 898px;
+    background-image:url("usagi_s_modoru!.png");
+}
+
+/*工事中
+.rion_s a{
+	position:fixed;
+	top:-1px;
+	left:217px;
+	width:1183px;
+	height:898px;
+	background-image:url("rion_s.gif");
+}
+.rion_s a:hover{
+	width: 1183px;
+	height: 898px;
+    background-image:url("rion_s_modoru!.png");
+}
+*/
+
+.risu_s a{
+	position:fixed;
+	top:-1px;
+	left:217px;
+	width:1183px;
+	height:898px;
+	background-image:url("risu_s.gif");
+}
+.risu_s a:hover{
+	width: 1183px;
+	height: 898px;
+    background-image:url("risu_s_modoru!.png");
+}
+
+.neko_s a{
+	position:fixed;
+	top:-1px;
+	left:217px;
+	width:1183px;
+	height:898px;
+	background-image:url("neko_s.gif");
+}
+.neko_s a:hover{
+	width: 1183px;
+	height: 898px;
+    background-image:url("neko_s_modoru!.png");
+}
+
+.kuma_s a{
+	position:fixed;
+	top:-1px;
+	left:217px;
+	width:1183px;
+	height:898px;
+	background-image:url("kuma_s.gif");
+}
+.kuma_s a:hover{
+	width: 1183px;
+	height: 898px;
+    background-image:url("kuma_s_modoru!.png");
+}
+
+.panda_s a{
+	position:fixed;
+	top:-1px;
+	left:217px;
+	width:1183px;
+	height:898px;
+	background-image:url("panda_s.gif");
+}
+.panda_s a:hover{
+	width: 1183px;
+	height: 898px;
+    background-image:url("panda_s_modoru!.png");
+}
+
+.buta_s a{
+	position:fixed;
+	top:-1px;
+	left:217px;
+	width:1183px;
+	height:898px;
+	background-image:url("buta_s.gif");
+}
+.buta_s a:hover{
+	width: 1183px;
+	height: 898px;
+    background-image:url("buta_s_modoru!.png");
+}
+
+.usagi_s a{
+	position:fixed;
+	top:-1px;
+	left:217px;
+	width:1183px;
+	height:898px;
+	background-image:url("usagi_s.gif");
+}
+.usagi_s a:hover{
+	width: 1183px;
+	height: 898px;
+    background-image:url("usagi_s_modoru!.png");
+}
+
+.ikamaru_s a{
+	position:fixed;
+	top:-1px;
+	left:217px;
+	width:1183px;
+	height:898px;
+	background-image:url("ikamaru_s.gif");
+}
+
+.ikamaru_s2 a{
+	position:fixed;
+	top:-1px;
+	left:217px;
+	width:1183px;
+	height:898px;
+	background-image:url("ikamaru_s2.gif");
+}
+
+.map_s a{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:1261px;
+	height:892px;
+	background-image:url("map.jpg");
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>無題ドキュメント</title>
+<link href="kirin.css" rel="stylesheet" type="text/css">
+<link href="kirin.js" rel="stylesheet" type="text/js">
+
+<script language="JavaScript">
+<!--
+// 一定時間経過後に指定ページにジャンプする
+ mnt=45// 何秒後に移動するか？
+url = "index.html"; // 移動するアドレス
+function jumpPage() {
+  location.href = url;
+  arget= _top ;
+}
+setTimeout("jumpPage()",mnt*1000)
+//-->
+</script>
+
+
+</head>
+
+<body bgcolor="#EBFBFF">
+
+ <span onClick="document.all.item('ikamaru_s').style.visibility='visible'">
+ 	<div class="ikamaru"> <a  target="_blank"></a></div>
+ </span>
+ 
+ <div class="kumo_3"> <a  target="_blank"></a></div>
+ <div class="yokomuki"> <a  target="_blank"></a></div>
+ <div class="taiyou"> <a  target="_top"></a></div>
+ <div class="sibafu"> <a href="http:kiso2.info" target="_blank"></a></div>
+ <div class="house"> <a  target="_top"></a></div>
+ 
+  <span onClick="document.all.item('yokomuki_s').style.visibility='visible'">
+  <div class="kumo_1"> <a  target="_blank"></a></div>
+  </span>
+
+<span onClick="document.all.item('kirin_s').style.visibility='visible'">
+<span onmouseover="document.all.item('kirin_f').style.visibility='visible'" onmouseout="document.all.item('kirin_f').style.visibility='hidden'">
+<div class="kirin"><a target="_blank" name="img" style="position:absolute"></a></div>
+</span></span>
+
+              
+
+				<div ID="kirin_s" onClick="document.all.item('kirin_s2').style.visibility='visible'" style="visibility:hidden;">
+                <div class="kirin_s"><a target="_blank"></a></div>
+                </div>
+                
+                <div ID="kirin_s2" onClick="document.all.item('kirin_s3').style.visibility='visible'" style="visibility:hidden;">
+                <div class="kirin_s2"><a target="_blank"></a></div>
+                </div>
+                
+                <div ID="kirin_s3" onClick="document.all.item('kirin_s4').style.visibility='visible'" style="visibility:hidden;">
+                <div class="kirin_s3"><a href="index.html" target="_top"></a></div>
+                </div>
+                
+                <div ID="kirin_s4" onClick="jumpPage()" style="visibility:hidden;">
+                <div class="kirin_s4"><a href="index.html" target="_top"></a></div>
+                </div>
+                
+                
+</body>
+</html>

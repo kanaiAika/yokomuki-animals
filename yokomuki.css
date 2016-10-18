@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.body a{
+	margin:2000px;
+	background-color:#CEEFFF;
+}
+
+.container {
+	width:900px;
+　　height:900px;	
+}
+
+.hidari a{
+	position:fixed;
+	top:500px;
+	left:50px;
+	width:134px;
+	height:193px;
+	background-image:url(hidari.png);
+}
+
+.hidari_stop a{
+	position:fixed;
+	top:500px;
+	left:1500px;
+	width:198px;
+	height:198px;
+	background-image:url(stop.png);
+}
+
+
+.migi a{
+	position:fixed;
+	top:500px;
+	left:1500px;
+	width:140px;
+	height:197px;
+	background-image:url(migi.png);
+}
+
+
+.migi_stop a{
+	position:fixed;
+	top:500px;
+	left:50px;
+	width:198px;
+	height:198px;
+	background-image:url(stop.png);
+}
+
+.kumo_1 a{
+	position:fixed;
+	top:200px;
+	left:300px;
+    width: 1017px;
+	height: 496px;
+    background-image:url("くも本体.png");
+	float:left;
+}
+
+.ikamaru a{
+	position:absolute;
+	top:150px;
+	left:100px;
+    width: 180px;
+	height: 146px;
+    background-image:url("くも.png");
+	;
+}
+
+.ikamaru a:hover{
+	position:absolute;
+	top:106px;
+	left:100px;
+	width: 178px;
+	height: 192px;
+    background-image:url("ikamaru.png");
+}
+
+.kumo_3 a{
+	position:absolute;
+	top:200px;
+	left:2000px;
+    width: 204px;
+	height: 172px;
+    background-image:url("くも１.png");
+	
+}
+
+.kumo_3 a:hover{
+	position:absolute;
+	top:180px;
+	left:2000px;
+    width: 204px;
+	height: 172px;
+    background-image:url("くも１.png");
+	
+}
+
+
+
+.taiyou a{
+	position:absolute;
+	top:50px;
+	left:1200px;
+    width: 382px;
+	height: 385px;
+    background-image:url("太陽.png");
+	
+}
+
+.taiyou a:hover{
+	position:absolute;
+	top:50px;
+	left:1300px;
+    width: 243px;
+	height: 270px;
+    background-image:url("tuki.png");
+	
+}
+
+.yokomuki_f a{
+	position:absolute;
+	top:200px;
+	left:600px;
+    width: 302px;
+	height: 131px;
+    background-image:url("ネームプレート-01.png");
+}
+
+.sibafu a{
+	position:absolute;
+	top:900px;
+	left:0px;
+    width: 2500px;
+	height: 567px;
+    background-image:url("芝生.png");
+	
+}
+
+.house a{
+	position:absolute;
+	top:600px;
+	left:1900px;
+    width: 400px;
+	height: 400px;
+    background-image:url("house_1.gif");
+	
+}
+
+.house a:hover{
+	position:absolute;
+	top:600px;
+	left:1900px;
+    width: 400px;
+	height: 400px;
+    background-image:url("home.png");
+	
+}
+
+.yokomuki_s a{
+	position:fixed;
+	top:-1px;
+	left:217px;
+	width:1183px;
+	height:898px;
+	background-image:url("yokomuki_s.gif");
+}

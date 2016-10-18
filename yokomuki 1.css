@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.table a{
+	width:50%;
+	height:50%;
+	
+}
+.button a{
+	position:absolute;
+	top:200px;
+	left:1500px;
+   
+}
+	
+
+.kumo_1 a{
+	position:absolute;
+	top:200px;
+	left:300px;
+    width: 1017px;
+	height: 496px;
+    background-image:url("くも本体.png");
+	float:left;
+}
+
+.kumo_2 a{
+	position:absolute;
+	top:150px;
+	left:100px;
+    width: 204px;
+	height: 172px;
+    background-image:url("くも１.png");
+	float:left;
+}
+
+.kumo_3 a{
+	position:absolute;
+	top:700px;
+	left:1300px;
+    width: 180px;
+	height: 146px;
+    background-image:url("くも.png");
+	float:left;
+}
+
+.kumo_3 a{
+	position:absolute;
+	top:50px;
+	left:1200px;
+    width: 382px;
+	height: 385px;
+    background-image:url("太陽.png");
+	float:left;
+}
+
+.yokomuki_f a{
+	position:absolute;
+	top:300px;
+	left:600px;
+    width: 302px;
+	height: 131px;
+    background-image:url("ネームプレート-01.png");
+}
+
